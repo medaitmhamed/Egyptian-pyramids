@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flag">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <div class="lens">
+        <div class="sky">
+            <div class="sun"></div>
+            <div class="soil">
+                <svg id="dunes" viewBox="0 0 900 600" width="600" height="350" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                    <path d="M0 387L129 257L257 329L386 261L514 350L643 262L771 331L900 372L900 601L771 601L643 601L514 601L386 601L257 601L129 601L0 601Z" fill="#f5730a"></path>
+                    <path d="M0 325L129 410L257 427L386 380L514 345L643 378L771 385L900 336L900 601L771 601L643 601L514 601L386 601L257 601L129 601L0 601Z" fill="#e36907"></path>
+                    <path d="M0 445L129 470L257 380L386 385L514 390L643 425L771 412L900 386L900 601L771 601L643 601L514 601L386 601L257 601L129 601L0 601Z" fill="#d16004"></path>
+                    <path d="M0 452L129 500L257 515L386 486L514 490L643 487L771 452L900 499L900 601L771 601L643 601L514 601L386 601L257 601L129 601L0 601Z" fill="#bf5702"></path>
+                    <path d="M0 540L129 508L257 509L386 518L514 539L643 557L771 532L900 544L900 601L771 601L643 601L514 601L386 601L257 601L129 601L0 601Z" fill="#ae4e00"></path>
+                </svg>
+                <div class="pyramid">
+                    <div class="side one"></div>
+                    <div class="side two"></div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let circle = document.querySelector(".sky");
+        document.addEventListener("resize", function(){
+            if (innerWidth <= 500){
+                circle.style.width = (innerWidth - 10 ) + "px";
+                circle.style.height = (innerWidth - 10 ) + "px";
+            }
+            else{
+                circle.style.width = '500px';
+                circle.style.height = '500px';
+            }
+        })
+        
+    </script>
+</body>
+</html>
